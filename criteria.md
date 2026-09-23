@@ -25,6 +25,7 @@ contains the answer.
 **Why this target:**
 <!-- e.g. "One of my questions is about a topic only two documents mention, so
      I expect that one to be hard." -->
+     One of my questions have information about the 2 topics(chunks) alone but I want to see if there is some type of crossover
 
 ---
 
@@ -35,6 +36,7 @@ Every answer the system produces names at least one source document.
 **Why this target:**
 <!-- Why all five and not four? What about your setup makes that achievable —
      or what would have to go wrong for it not to be? -->
+     Checking to see if a question will utilize the texts from the corpus or if it will produce an answer not relevant to the question in hand.
 
 ---
 
@@ -52,10 +54,17 @@ in at least 4 of 5 tries.
 **Why this target:**
 <!-- What did your distances look like when you set the cutoff in Milestone 4?
      Was there a clean gap, or did the two groups overlap? -->
+     The out of scope questions aren;t relevant to the systems so the cutoff will score them higher meaning it wont be the threshold for the answer
+
+     
+
+
 
 ---
 
 ## 4. Something about your chunks
+At least 4 of 5 chunks should include a thread title and have a cohesive sentence structure with no cut off.
+
 
 <!-- YOU WRITE THIS ONE.
 
@@ -73,11 +82,13 @@ in at least 4 of 5 tries.
 
 **Why this target:**
 
-
+While my chunks are small, the title gives a level of context they would be missing if it didn't have one.
 
 ---
 
 ## 5. Your choice
+
+For at least 4 of 5 test questions, the system returns an answer in under 3 seconds.
 
 <!-- YOU WRITE THIS ONE TOO.
 
@@ -87,6 +98,7 @@ in at least 4 of 5 tries.
      present — anything, as long as it names a number or an observable
      outcome. -->
 
+When i run and time my questions, I see that they are taking more then 4 seconds to respond. Most of the time the model is writing the answer but since my corpus is small it should have a faster response.
 
 
 **Why this target:**
