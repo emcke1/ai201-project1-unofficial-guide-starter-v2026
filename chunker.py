@@ -80,7 +80,7 @@ def fallback_split(
     return chunks
 
 
-def split_documents(documents: list[Document]) -> list[Chunk]:
+def split_documents(documents, chunk_size=350, overlap=20, min_size=215):
     """
     Split documents into chunks. ⚠️ REPLACE THE BODY OF THIS IN MILESTONE 3.
 
@@ -97,7 +97,61 @@ def split_documents(documents: list[Document]) -> list[Chunk]:
       - Would splitting on paragraph breaks keep more thoughts intact than
         splitting on a character count?
     """
-    return fallback_split(documents)
+    chunks = []
+
+    for doc in documents:
+        pieces = doc.text.split("\n\n")
+        paragraphs = [p.strip() for p in pieces if p.strip()]
+
+        # Step 1: build raw chunks by merging paragraphs up to chunk_size (no overlap yet)
+        raw_chunks = []
+        buffer = ""
+        for para in paragraphs:
+            if buffer and len(buffer) + len(para) + 1 > chunk_size:
+                raw_chunks.append(buffer)
+                buffer = para
+            else:
+                buffer = (buffer + " " + para).strip() if buffer else para
+        if buffer:
+            raw_chunks.append(buffer)
+
+        # Step 2: merge any chunk under min_size into a neighbor
+        merged = True
+        while merged and len(raw_chunks) > 1:
+            merged = False
+            for i, text in enumerate(raw_chunks):
+                if len(text) < min_size:
+                    if i < len(raw_chunks) - 1:
+                        raw_chunks[i] = text + " " + raw_chunks[i + 1]
+                        raw_chunks.pop(i + 1)
+                    else:
+                        raw_chunks[i - 1] = raw_chunks[i - 1] + " " + text
+                        raw_chunks.pop(i)
+                    merged = True
+                    break
+
+        # Step 3: add overlap once, from each finished chunk's tail into the next
+        final_chunks = []
+        for i, text in enumerate(raw_chunks):
+            if i == 0:
+                final_chunks.append(text)
+            else:
+                tail = final_chunks[-1][-overlap:]
+                tail = tail[tail.find(" ")+1:] if " " in tail else tail
+                final_chunks.append(tail + " " + text)
+
+        for i, text in enumerate(final_chunks):
+            chunks.append(Chunk(
+                text=text,
+                source=doc.source,
+                index=i,
+                produced_by="chunker.py::split_documents",
+            ))
+
+    return chunks
+
+
+
 
 
 def describe(chunks: list[Chunk]) -> str:
