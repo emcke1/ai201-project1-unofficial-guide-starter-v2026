@@ -105,10 +105,18 @@ Innisfree Hall — what it's actually like Transferred in last year, so take thi
      visible. Milestone 4. -->
 
 **Question:**
-
+How many credits do I need to take to declare my major?
 **Answer:**
 
 ```
+Answer using only the documents above, and name the file you used.
+======================================================================
+
+Based on the provided documents, there is no mention of a credit requirement needed to declare a major. 
+
+Source: `admin_declaring_a_major.txt`
+
+Sources retrieved: admin_add_drop_deadline.txt, admin_declaring_a_major.txt, admin_graduation_requirements.txt, admin_pass_fail_option.txt, course_cs_340.txt
 ```
 
 **My relevance cutoff:**
@@ -121,10 +129,22 @@ Innisfree Hall — what it's actually like Transferred in last year, so take thi
      here — the table below wants all ten rows.
 
      Milestone 4. -->
+The in-scope questions fall between 0.36 and 0.40. The out-of-scope questions fall between 0.83 and 0.93. The gap is between 0.60 - 0.83 so I set the threshold to 0.07.
 
 | Question | In corpus? | Best distance |
 |---|---|---|
 |  |  |  |
+
+Which Physics class has the least amount of classwork? | YES | 0.55
+How many credits do I need to take to declare my major? | YES |0.36
+What is the university policy for snow days? | YES |0.60
+How far is the university clinic from the library on campus? | YES |0.51
+When is it a good time go the university dining hall on a Tuesday? | YES |0.40
+What is the capital of Mongolia? | NO | 0.83
+How do I change the oil in a diesel engine? | NO |0.93
+Who won the 1994 World Cup? |	NO |0.89
+What is the recommended dosage of ibuprofen for a headache? | NO	|0.84
+How do I write a for loop in Rust? | NO	|0.90
 
 ## How I Used AI
 
@@ -137,10 +157,21 @@ Innisfree Hall — what it's actually like Transferred in last year, so take thi
 
      Milestone 5. -->
 
+- Used claude to debug environment setup
+- Used claude to recover an accidently deleted file
+- Used claude to debug the chunking logic
+- Used claude to understand CLI tool syntax
+- Used claude to understand conceptual pieces of the assignment like corpus and overlap
+- Used claude to help structure the README sections
+- Didn't use claude to write or choose my actual chunk size, overlap, minimum size,  or relevance cutoff numbers
+     - Those came from my own testing and reading of my corpus
+
 **1.**
 
 **2.**
 
+
+I'm plaaning to do the stretch goals on my own time
 <!-- ── Stretch features ─────────────────────────────────────────────────────
      Doing one? Say so here BEFORE you start. A feature this README never
      claims earns nothing.
