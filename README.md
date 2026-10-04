@@ -131,20 +131,19 @@ Sources retrieved: admin_add_drop_deadline.txt, admin_declaring_a_major.txt, adm
      Milestone 4. -->
 The in-scope questions fall between 0.36 and 0.40. The out-of-scope questions fall between 0.83 and 0.93. The gap is between 0.60 - 0.83 so I set the threshold to 0.07.
 
-| Question | In corpus? | Best distance |
-|---|---|---|
-|  |  |  |
-
-Which Physics class has the least amount of classwork? | YES | 0.55
-How many credits do I need to take to declare my major? | YES |0.36
-What is the university policy for snow days? | YES |0.60
-How far is the university clinic from the library on campus? | YES |0.51
-When is it a good time go the university dining hall on a Tuesday? | YES |0.40
-What is the capital of Mongolia? | NO | 0.83
-How do I change the oil in a diesel engine? | NO |0.93
-Who won the 1994 World Cup? |	NO |0.89
-What is the recommended dosage of ibuprofen for a headache? | NO	|0.84
-How do I write a for loop in Rust? | NO	|0.90
+| Question                                                            | In corpus?  | Best distance |
+|---                                                                  |---          |---            |
+                                                                      |             |               |  
+Which Physics class has the least amount of classwork?                | YES         | 0.55          |
+How many credits do I need to take to declare my major?               | YES         |0.36           |
+What is the university policy for snow days?                          | YES         |0.60           |
+How far is the university clinic from the library on campus?          | YES         |0.51           |
+When is it a good time go the university dining hall on a Tuesday?    | YES         |0.40           |
+What is the capital of Mongolia?                                      | NO          | 0.83          |
+How do I change the oil in a diesel engine?                           | NO          |0.93           |
+Who won the 1994 World Cup?                                           | NO          |0.89           |
+What is the recommended dosage of ibuprofen for a headache?           | NO	         |0.84           |
+How do I write a for loop in Rust?                                    | NO	         |0.90           |
 
 ## How I Used AI
 
@@ -197,13 +196,13 @@ I'm plaaning to do the stretch goals on my own time
 
      Milestone 1. -->
 
-| Criterion | Target | Run 1 | Run 2 | Run 3 | Verdict |
-|---|---|---|---|---|---|
-| 1. Retrieved chunk contains the answer | 4 of 5 |  |  |  |  |
-| 2. Every answer names a source | 5 of 5 |  |  |  |  |
-| 3. Gate stops out-of-corpus questions | 4 of 5 |  |  |  |  |
-| 4. | | | | | |
-| 5. | | | | | |
+| Criterion                                       | Target | Run 1 | Run 2 | Run 3 | Verdict |
+|---                                              |---     |---    |---    |---    |---      |
+| 1. Retrieved chunk contains the answer          | 4 of 5 |       |       |       |         |
+| 2. Every answer names a source                  | 5 of 5 |       |       |       |         |
+| 3. Gate stops out-of-corpus questions           | 4 of 5 |       |       |       |         |
+| 4. Thread title & cohesive sentence structure   | 4 of 5 |       |       |       |         |
+| 5. Answer in under 3 seconds                    | 4 of 5 |       |       |       |         |
 
 <!-- Underneath, paste the REAL output for each criterion from one of your
      runs — the actual text your system produced, not a description of it.
@@ -221,12 +220,12 @@ I'm plaaning to do the stretch goals on my own time
      Milestone 2. -->
 
 | # | Criterion | Verdict | How I decided |
-|---|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
+|---|---        |---      |---            |
+| 1 |           |         |               |
+| 2 |           |         |               |
+| 3 |           |         |               |
+| 4 |           |         |               |
+| 5 |           |         |               |
 
 ## Diagnoses
 
