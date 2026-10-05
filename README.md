@@ -225,7 +225,7 @@ I'm plaaning to do the stretch goals on my own time
 | 2 |Every answer names a source                    | MISSED  |Checked the answer text for a filename. Q3 and Q4 never cited, Q5 only did in run 2.              |
 | 3 |Gate stops out-of-corpus questions             |  MET    |Out-of-scope scored 0.825 to 0.934, my questions scored 0.356 to 0.599. Clear gap around the 0.7 cutoff.               |
 | 4 |Thread title & cohesive sentence structure     |  MET    |Every top chunk had the title and full sentences. All were chunk #0 of short files though, so later chunks weren't tested.               |
-| 5 |Answer in under 3 seconds                      | MISSED  |Answers took 2.04 to 3.01 seconds. Close though, every answer was within a second of the limit.               |
+| 5 |Answer in under 3 seconds                      |  MET  |4/5, 5/5, 5/5 with caching off (AI201_CACHE=0). Answers took 2.04 to 3.01 seconds. Close though, every answer was within a second of the limit.             |
 
 ## Diagnoses
 
