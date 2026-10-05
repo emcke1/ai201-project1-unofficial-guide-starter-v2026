@@ -198,11 +198,11 @@ I'm plaaning to do the stretch goals on my own time
 
 | Criterion                                       | Target | Run 1 | Run 2 | Run 3 | Verdict |
 |---                                              |---     |---    |---    |---    |---      |
-| 1. Retrieved chunk contains the answer          | 4 of 5 |       |       |       |         |
-| 2. Every answer names a source                  | 5 of 5 |       |       |       |         |
-| 3. Gate stops out-of-corpus questions           | 4 of 5 |       |       |       |         |
-| 4. Thread title & cohesive sentence structure   | 4 of 5 |       |       |       |         |
-| 5. Answer in under 3 seconds                    | 4 of 5 |       |       |       |         |
+| 1. Retrieved chunk contains the answer          | 4 of 5 |  0/5  |  0/5  |  0/5  |  MISSED |
+| 2. Every answer names a source                  | 5 of 5 |  2/5  |  3/5  |  2/5  |  MISSED |
+| 3. Gate stops out-of-corpus questions           | 4 of 5 |  5/5  |  5/5  |  5/5  |    MET  |
+| 4. Thread title & cohesive sentence structure   | 4 of 5 |  5/5  |  5/5  |  5/5  |    MET  |
+| 5. Answer in under 3 seconds                    | 4 of 5 |  4/5  |  5/5  |  5/5  |    MET  |
 
 <!-- Underneath, paste the REAL output for each criterion from one of your
      runs — the actual text your system produced, not a description of it.
@@ -219,13 +219,13 @@ I'm plaaning to do the stretch goals on my own time
 
      Milestone 2. -->
 
-| # | Criterion | Verdict | How I decided |
-|---|---        |---      |---            |
-| 1 |           |         |               |
-| 2 |           |         |               |
-| 3 |           |         |               |
-| 4 |           |         |               |
-| 5 |           |         |               |
+| # | Criterion                                     | Verdict | How I decided |
+|---|---                                            |---      |---            |
+| 1 |Retrieved chunk contains the answer            | MISSED  |Grepped the corpus and 4 of my questions ask for stuff that isn't in it. Q5's answer is in the Verrill files, but retrieval never pulled them.              |
+| 2 |Every answer names a source                    | MISSED  |Checked the answer text for a filename. Q3 and Q4 never cited, Q5 only did in run 2.              |
+| 3 |Gate stops out-of-corpus questions             |  MET    |Out-of-scope scored 0.825 to 0.934, my questions scored 0.356 to 0.599. Clear gap around the 0.7 cutoff.               |
+| 4 |Thread title & cohesive sentence structure     |  MET    |Every top chunk had the title and full sentences. All were chunk #0 of short files though, so later chunks weren't tested.               |
+| 5 |Answer in under 3 seconds                      | MISSED  |Answers took 2.04 to 3.01 seconds. Close though, every answer was within a second of the limit.               |
 
 ## Diagnoses
 
@@ -261,13 +261,13 @@ I'm plaaning to do the stretch goals on my own time
 <!-- Same format, same five criteria, three runs each.
      `python run_eval.py --label after` -->
 
-| Criterion | Target | Run 1 | Run 2 | Run 3 | Verdict |
-|---|---|---|---|---|---|
-| 1. Retrieved chunk contains the answer | 4 of 5 |  |  |  |  |
-| 2. Every answer names a source | 5 of 5 |  |  |  |  |
-| 3. Gate stops out-of-corpus questions | 4 of 5 |  |  |  |  |
-| 4. | | | | | |
-| 5. | | | | | |
+| Criterion                                     | Target | Run 1 | Run 2 | Run 3 | Verdict |
+|---                                            |---     |---    |---    |---    |---      |
+| 1. Retrieved chunk contains the answer        | 4 of 5 |       |       |       |         |
+| 2. Every answer names a source                | 5 of 5 |       |       |       |         |
+| 3. Gate stops out-of-corpus questions         | 4 of 5 |       |       |       |         |
+| 4. Thread title & cohesive sentence structure |        |       |       |       |         |
+| 5. Answer in under 3 seconds                  |        |       |       |       |         |
 
 **Did it help?**
 
