@@ -1,0 +1,21 @@
+Produced by: AI201_CACHE=0 /usr/bin/time -p python app.py ask "<question>", 3 rounds x 5 questions
+Before improvement. Caching off.
+
+=== Run 1 ===
+real 3.01
+real 2.56
+real 2.06
+real 2.06
+real 2.06
+=== Run 2 ===
+real 2.59
+real 2.57
+real 2.05
+real 2.61
+real 2.55
+=== Run 3 ===
+real 2.56
+real 2.57
+real 2.59
+real 2.04
+real 2.55

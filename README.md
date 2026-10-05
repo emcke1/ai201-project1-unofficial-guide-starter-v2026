@@ -254,7 +254,7 @@ For criterion 2, I ran python app.py ask "What is the university policy for snow
 ## The Improvement
 
 **What I changed:**
-
+I changed the embedding problem by using the hybrid search.
 **Why I picked it:**
 
 <!-- Connect it to a specific diagnosis above in one sentence. If you can't,
