@@ -247,6 +247,10 @@ I'm plaaning to do the stretch goals on my own time
 
      Milestone 3. -->
 
+For criterion 1 Q5, I had ran 'python app.py retrieve "When is it a good time go the university dining hall on a Tuesday evening?" --top-k 10'. Verrill ranked 9th (0.5211) and 'money_jobs.txt' ranked #6 for just mentioning 'dining jobs', while the cutoff at #5 was 0.4802. The embedding is matching based off of the words 'dining hall' instead of the content about evening wait times, so this is an embedding problem.
+
+For criterion 2, I ran python app.py ask "What is the university policy for snow days?" --show-prompt to see what the model gets. Every chunk has its filename on it, so the model can see them. My prompt says to name the file the answer came so. When the model says "I don't have enough information," there's no answer, so it doesn't name a file. This is a generation problem 
+
 ## The Improvement
 
 **What I changed:**
